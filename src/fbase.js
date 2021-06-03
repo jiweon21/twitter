@@ -3,13 +3,16 @@ import "firebase/auth";
 
 var firebaseConfig = {
   apiKey: "AIzaSyAeLsc1h6U2Y8jocFqQK7V6MB5vzHo7F74",
-  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_MESSAGIN_ID,
-  appId: process.env.REACT_APP_APP_ID,
+  authDomain: "twitter-7a47f.firebaseapp.com",
+  projectId: "twitter-7a47f",
+  storageBucket: "twitter-7a47f.appspot.com",
+  messagingSenderId: "947099971343",
+  appId: "947099971343:web:cf2e5a10acd2309ac6987a",
 };
 
 firebase.initializeApp(firebaseConfig);
+
+export const firebaseInstance = firebase;
+
 export const authService = firebase.auth(); 
 
